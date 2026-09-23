@@ -11,7 +11,7 @@ description: 收集求职画像后，在 BOSS 直聘网页中自动筛选岗位�
 
 用户说“用 $boss-apply 帮我投递 BOSS 岗位”即进入本流程，不要求用户懂脚本、终端、Python 或篡改猴。先读 [首次启动](references/startup.md)，由助手检测环境、选择可用执行路径并完成配置。收集画像可与只读环境检测并行；不要把安装命令作为给用户的作业。
 
-有 Computer Use 时，即便没有 Python 或 Tampermonkey，也可用纯 Computer Use 路径完成相同筛选、去重和单次沟通流程，无须为了投递强制安装扩展。没有可用浏览器控制工具时先完成画像，准确说明需要启用的能力；不要声称已经启动或后台运行。
+先枚举当前可用浏览器工具：用户指定的浏览器优先，否则优先复用已连接、已登录的 Chrome，其次尝试 IAB 内置浏览器及其 Playwright 接口，最后考虑桌面 Computer Use。工具名称可能共用 cua 入口，不能因没有桌面鼠标控制就断言不能操作浏览器，也不能因自定义 API 登录就断言浏览器不可用。读取 [IAB 与 Playwright 验证](references/browser-paths.md) 进行无发送能力探测。没有 Python 或 Tampermonkey 也可以直接通过可用浏览器工具操作；没有任何可用浏览器控制工具时才解释缺口。
 
 ## 先补齐信息
 

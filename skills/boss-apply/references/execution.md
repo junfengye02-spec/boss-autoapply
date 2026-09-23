@@ -1,5 +1,9 @@
 # 执行与恢复
 
+## 浏览器执行路径
+
+先读 [浏览器路径](browser-paths.md)，区分 IAB/Chrome 的 Playwright 接口与桌面控制。IAB 路径无需安装 Tampermonkey，直接调用宿主提供的浏览器工具并使用本地持久台账；以下 userscript 操作只适用于已选择脚本模式的浏览器，不是所有路径的先决条件。
+
 ## 工具职责
 
 - Computer Use：Chrome/指定浏览器 UI、登录状态与招呼核验、安装/更新已审阅脚本、异常弹窗、最终结果检查。严格使用当前工具提供的 API；不通过 shell/CDP/AppleScript 绕过工具限制。
