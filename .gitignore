@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.sqlite*
+*.db
+*.log
+*.jsonl
+profile.json
+profiles/
+runtime-data/
+reports/
+*.pdf
+*.docx

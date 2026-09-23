@@ -1,0 +1,4 @@
+interface:
+  display_name: "BOSS 自动投递"
+  short_description: "收集求职画像与授权后，自动筛选、去重、发起沟通并核验结果"
+  default_prompt: "使用 $boss-apply 收集我的求职信息，信息足够且已获授权后启动 BOSS 自动投递。"
